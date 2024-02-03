@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator</title>
+    <link rel="stylesheet" href="../styles/menu.css ">
+    <link rel="stylesheet" href="../styles/gradient.css">
+  <!-- remixons icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="name"><a href="#">ColorBurstHub</a></div>
+            <ul>
+                <li><a href="../index.html">Color palette</a></li>
+                <li><a href="./pages/gradient.html">Gradient color</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+            <div id="menu"><i class="ri-menu-line"></i></div>
+        </nav>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="gradient">
+                <div class="bg"></div>
+                <div class="items">
+                    <div class="one-item">
+                        <h2>Direction</h2>
+                        <select name="" id="">
+                            <option value="top">Top</option>
+                            <option value="right top">Right top</option>
+                            <option value="left top">Left top</option>
+                            <option value="right bottom">Right Bottom</option>
+                            <option value="right">Right</option>
+                            <option value="left">Left bottom</option>
+                        </select>
+                    </div>
+                    <div class="one-item">
+                        <h2>Colors</h2>
+                        <div class="colors">
+                           <div class="one-color">  <input value="#ff0000" type="color" class="color1"></div>
+                           <div class="one-color"> <input value="#0000ff" type="color" class="color2"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <textarea readonly class="code" rows="" cols=""> background: linear-gradient(to right, #ff0000 , #0000ff);</textarea>
+                <div class="buttons">
+                    <div class="one-button">
+                        <button class="refresh">Refresh Colors</button>
+                    </div>
+                    <div class="one-button">
+                        <button class="copy">Copy Color</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../javaScript/gradient.js"></script>
+    <script src="../javaScript/menu.js"></script>
+</body>
+</html>
